@@ -1,0 +1,48 @@
+REACT
+- tampilkan / slicing dulu sesuai design, gunakan data dummy sementara("gunakan Destructing props "), jangan langsung gunakan state !!
+
+- useState() : state untuk menampung data sementara / seperti variabel dinamis
+- useEfect : useEfect(() => {}, ["state yg dirender"]) | return /remove event agar tidak berat Ex: interval dng return clearInterval(), => menampilkan efek / merender effect u/ di tampilkan
+ke- halaman utama 
+
+- useContext : untuk mengambil state dan agar bisa digunakan di semua component
+
+- react-router-dom
+
+-  SPA :  Single Page Apliaction "gunakan hanya satu page/halama pada application/Web, hanya 
+content/component yang di render"
+
+- MPA : Multi Page Aplication "gunakan lebih dari satu page/halaman pada application/Web, 
+render page baru dan component baru"
+
+- dynamic Link : link menyesuaikan Content berdasrkan id
+
+- useLoaderData : merender APi dulu baru tampilakan, dan 
+membuat clean code
+- Props, Immutable Dan One-Way Data Flow 
+
+- Memecah Isi Props Dengan Cara Destructing : memecah prop menjadi element asli NB(sesuai dengan element/ada sumber datanya). 
+Ex: const {nama, deskripsi, harga, foto, stok} = props.foodObj;
+
+
+- Membungkus Root Element Lebih Dari Satu Dengan React Fragment: Ex.. bisa dgn kondisi 
+
+### state
+1. penggunaan state :
+- perubahan nilai yg mempengaruhi render
+- Mengelola data dinamis
+- Pengaruh komponen state ke-komponen lain
+- Menjaga data dlm siklus komponent
+- menggunakan fungsi" tambahan yg bergantung pd state 
+
+2. Penggunaan variabel biasa, saat nilai tidak membutuhkan perubahan interface jika data tersebut tidak berubah
+
+#### state management
+- Local state : u/ satu/brp component, child akses via props, selalu digunakan dulu, bisa menggunakan lifting-Up("menaikkan state")
+- Global State : bisa u/ bnyk component, tools: context APi, redux dll...
+
+- Derived State
+
+-Mengurutkan Data daengan State
+
+- lift-Up : menaikkan props ke paling atas
